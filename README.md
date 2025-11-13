@@ -30,10 +30,10 @@ npm run dev
  
 
 ### Admin (mock)
-- `POST /api/v1/auth/login `→ body `{"username":"admin","password":"admin"}`
-devuelve `{ "token": "lab-admin" }`
+- `POST /api/v1/auth/login`→ body `{"username":"admin","password":"admin"}`
+    devuelve `{ "token": "lab-admin" }`
 - `GET /api/v1/admin/appointments?date=...&serviceId=...&status=...`
-header: `Authorization: Bearer lab-admin`
+   header: `Authorization: Bearer lab-admin`
 
 ### Ejemplos rápidos
 ### PowerShell
@@ -44,7 +44,7 @@ Invoke-RestMethod -Uri "$base/health" -Method Get
 $body = @{ serviceId=2; date="2025-11-11"; time="16:00"; studentName="Tester" } | ConvertTo-Json
 Invoke-RestMethod -Uri "$base/appointments" -Method Post -Body $body -ContentType "application/json"
 ```
-### cURL
+### CURL
 ```bash
 curl -s http://localhost:3000/api/v1/services
 
@@ -59,7 +59,7 @@ curl -s -X POST http://localhost:3000/api/v1/appointments \
 - `src/data/appointments.json` – se actualiza al crear/cancelar/reprogramar
 
 ## Estructura
-```bash
+```txt
 src/
   app.js
   server.js
