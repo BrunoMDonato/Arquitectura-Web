@@ -15,6 +15,7 @@ npm run dev
 ```
 
 ## Endpoints
+
 ### Público
 - `GET /api/v1/health` → `{ "status": "ok" }`
 - `GET /api/v1/services` → catálogo de servicios
@@ -31,11 +32,12 @@ npm run dev
 
 ### Admin (mock)
 - `POST /api/v1/auth/login`→ body `{"username":"admin","password":"admin"}`
-    devuelve `{ "token": "lab-admin" }`
+  - devuelve `{ "token": "lab-admin" }`
 - `GET /api/v1/admin/appointments?date=...&serviceId=...&status=...`
-   header: `Authorization: Bearer lab-admin`
+  - header: `Authorization: Bearer lab-admin`
 
-### Ejemplos rápidos
+## Ejemplos rápidos
+
 ### PowerShell
 ```powershell
 $base = "http://localhost:3000/api/v1"
@@ -44,6 +46,7 @@ Invoke-RestMethod -Uri "$base/health" -Method Get
 $body = @{ serviceId=2; date="2025-11-11"; time="16:00"; studentName="Tester" } | ConvertTo-Json
 Invoke-RestMethod -Uri "$base/appointments" -Method Post -Body $body -ContentType "application/json"
 ```
+
 ### CURL
 ```bash
 curl -s http://localhost:3000/api/v1/services
