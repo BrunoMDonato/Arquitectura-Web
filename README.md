@@ -8,7 +8,7 @@ Persistencia en archivos JSON. Sin base de datos ni frontend.
 - Archivos JSON en `src/data/`
 
 ## Correr
-```json
+```bash
 npm install
 npm run dev
 # http://localhost:3000
@@ -59,7 +59,7 @@ curl -s -X POST http://localhost:3000/api/v1/appointments \
 - `src/data/appointments.json` – se actualiza al crear/cancelar/reprogramar
 
 ## Estructura
-```json
+```bash
 src/
   app.js
   server.js
@@ -75,58 +75,6 @@ src/
 ## Notas
 - Validaciones básicas y códigos HTTP (`400/401/404/409`).
 - Auth de admin simulada (token fijo) para fines de TP.
-
-```json
-¿Así de sintético te sirve? Si querés, le agrego un **diagrama simple ASCII** de flujo en una línea o lo dejamos así.
-::contentReference[oaicite:0]{index=0}
-```
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
