@@ -1,0 +1,40 @@
+[
+  {
+    "id": 1,
+    "serviceId": 2,
+    "date": "2025-11-11",
+    "time": "13:00",
+    "studentName": "Bruno 2",
+    "status": "canceled"
+  },
+  {
+    "id": 2,
+    "serviceId": 2,
+    "date": "2025-11-11",
+    "time": "11:00",
+    "studentName": "Bruno 2"
+  },
+  {
+    "id": 3,
+    "serviceId": 2,
+    "date": "2025-11-11",
+    "time": "12:00",
+    "studentName": "Bruno 2"
+  },
+  {
+    "id": 4,
+    "serviceId": 2,
+    "date": "2025-11-11",
+    "time": "15:00",
+    "studentName": "Tester",
+    "status": "confirmed"
+  },
+  {
+    "id": 5,
+    "serviceId": 2,
+    "date": "2025-11-11",
+    "time": "16:30",
+    "studentName": "Demo",
+    "status": "confirmed"
+  }
+]

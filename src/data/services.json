@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "name": "PC alta performance",
+    "description": "Estaciones con GPU para simulaciones, IA, etc.",
+    "durationMinutes": 60
+  },
+  {
+    "id": 2,
+    "name": "Laboratorio general",
+    "description": "PCs estándar para trabajos prácticos y programación.",
+    "durationMinutes": 90
+  },
+  {
+    "id": 3,
+    "name": "Puesto impresora 3D",
+    "description": "Uso supervisado del área de impresión 3D.",
+    "durationMinutes": 120
+  }
+]
