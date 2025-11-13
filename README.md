@@ -32,8 +32,18 @@ Permite consultar servicios disponibles, ver horarios libres por día, crear/can
 
 
  ### Estructura del proyecto
-
-
+```
+src/
+  app.js            # inyecta datos/helpers y monta routers
+  server.js         # arranque del servidor
+  routes/
+    public.js       # health, services, availability, appointments
+    admin.js        # login mock y endpoints admin protegidos
+  data/
+    services.json       # catálogo de servicios
+    appointments.json   # turnos persistidos
+    config.json         # horario: openingTime / closingTime
+```
 
 
  
@@ -44,18 +54,19 @@ Permite consultar servicios disponibles, ver horarios libres por día, crear/can
 
 
 ### Instalación y ejecución
-
-
-
-
+```
+npm install
+npm run dev
+# Servidor en http://localhost:3000
+```
 
 ### Endpoints
-### Health
+## Health
 GET /api/v1/health
 200 → { "status": "ok" }
 
 
-### Servicios
+## Servicios
 GET /api/v1/services
 200 → [ { "id": 1, "name": "...", "durationMinutes": 60 }, ... ]
 
